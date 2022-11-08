@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@media only screen and (min-width:501px) and (max-width:900px) {
+
+    /* HEADER ALANI */
+    #header-container{
+        display: block;
+        width: 100%;
+        height: 90px;
+    }
+    #header{
+        display: block;
+        width: 100%;
+        padding: 0 10px;
+    }
+    #logo-container{
+        display: block;
+        width: 100%;
+        height: 70px; 
+    }
+    #logo-container a{
+        display: block;
+        width: 200px;
+        height: 60px;
+        text-decoration: none;
+        margin: 0 auto;
+    }
+
+    #logo-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #search-container{
+        display: none;
+    }
+    #menu-container{
+        display: none;
+    }
+
+    /* HEADER ALANI BİTİŞ */ 
+
+    /* ANA SAYFA ALANI */ 
+
+    #ustAciklama{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 5px auto;
+        background-color: white;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+        font-size: 12px;
+        color: #180A0A;
+        font-family: 'Oswald', sans-serif;
+    }
+    #container{
+        width: 100%;
+    }
+    #container3{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #urunlerAlani{
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .urunler{
+        width: 150px;
+        height: auto;
+        margin-left: 15px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+    }
+
+    .img{
+        display: block;
+        width: 100%;
+        height: 110px;
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .urun{
+        display: block;
+        width: 100%;
+        height: 10px;
+        margin: 10px 0;
+        font-size: 12px;
+        color: #180A0A;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+    }
+    .btn{
+        display: block;
+        width: 70px;
+        height: auto;
+        margin: 10px auto;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    
+    /*------------------ Hesap Bölümü -------------------*/
+
+#responsive{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.responsivehesapAlani{
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 70px;
+    max-height: 500px;
+    background-color: white;
+    overflow: scroll;
+    padding: 10px 5px 10px 15px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+    border-radius: 20px 20px 0px 0px;
+    transition: .5s;
+}
+.hesapAlani{
+    position: fixed;
+    bottom:-100%;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    overflow: scroll;
+    padding: 10px 5px 10px 15px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.urunList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #180A0A;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+}
+.urunAdi{
+    width: 40%;
+    text-align: start;
+    justify-content: start;
+}
+.urunPorsiyon{
+    width: 35%;
+    text-align: center;
+    justify-content: center;
+}
+.urunFiyati{
+    width: 14%;
+    text-align: end;
+    justify-content: end;
+}
+.hesapbuton{
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color:#FA9628;
+    font-family: 'Oswald', sans-serif;
+}
+
+#toplamDetay{
+    display: none;
+}
+
+.odeme{
+    padding: 5px;
+    font-size: 15px;
+    margin: 20px auto;
+}
+
+/* ----------- ÖDEME ALANİ ---------------- */
+
+.radioinput{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.radio{
+    height: 15px;
+    line-height: 18px;
+    font-size: 18px;
+}
+.text{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#kartodemealani{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.kartbaslik{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.kartodemeinputalani{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.kartodemeay, .kartodemeyil,.kartodemecvv{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+#kartodemealani .btn{
+    width: 50%;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.basarili{
+    width: 100%;
+    height: 470px;
+}
+.resimalani{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+}
+.resimalani img{
+    width: 100%;
+    height: 100%;
+}
+
+.basarilitext{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+    /*----------- FOOTER ALANI ----------*/
+
+    #footer-alani{
+        width: 100%;
+        height: auto;
+    }
+
+    /*-------- İÇERİK ALANI----------*/
+
+    .icerik-baslik{
+        width: 100%;
+    }
+    .icerik-baslik .image-area{
+        width: 100px;
+        height: 150px;
+    }
+    .icerik-baslik #icerik{
+        font-size: 13px;
+    }
+    #baslik h1{
+        font-size: 30px;
+    }
+
+   /* YAZARIN DİĞER KİTAPLARI ALANI  */
+
+   .yazarin-diger-kitaplari-text,.cizgi-alani{
+        width: 100%;       
+    }
+    .cizgi-ustu-text{   
+        font-size: 16px;
+    }
+    .cizgi1,.cizgi2{
+        width: 47%;
+    }
+    .yazarin-diger-kitaplari-container{
+        width: 100%;
+        height: 140px;
+    }
+    .yazarin-diger-kitaplari{
+        width: 63%;
+    }
+
+    /* YORUM ALANI İÇİN KODLAR */
+    .FormAlani, .TextareaAlani, .InputAlani, .YorumlarBolumu{
+        width: 100%;
+    }
+    .YorumBaslik{
+        font-size: 16px;
+    }
+    .TextareaAlani textarea, .InputAlani input, .yorum-kullanici{
+        font-size: 14px;
+    }
+
+    /* -------- modal --------*/
+
+    #modal-container{
+        width: 90%;
+        height: 200px;
+    }
+    .modal-baslik{
+        width: 100%;
+        height: 75px;
+        line-height: 75px;
+    }
+    
+    .modal-icerik{
+        width: 100%;
+        height: 125px;
+        line-height: 125px;
+        padding-left: 20px;
+        color: #3c485e;
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (max-width:500px) {
+
+    /* HEADER ALANI */
+    #header-container{
+        display: block;
+        width: 100%;
+        height: 90px;
+    }
+    #header{
+        display: block;
+        width: 100%;
+        padding: 0 10px;
+    }
+    #logo-container{
+        display: block;
+        width: 100%;
+        height: 70px; 
+    }
+    #logo-container a{
+        display: block;
+        width: 200px;
+        height: 60px;
+        text-decoration: none;
+        margin: 0 auto;
+    }
+
+    #logo-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #search-container{
+        display: none;
+    }
+    #menu-container{
+        display: none;
+    }
+
+    /* HEADER ALANI BİTİŞ */ 
+
+    /* ANA SAYFA ALANI */ 
+
+    #ustAciklama{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 5px auto;
+        background-color: white;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+        font-size: 12px;
+        color: #180A0A;
+        font-family: 'Oswald', sans-serif;
+    }
+    #container{
+        width: 100%;
+    }
+    #container3{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #urunlerAlani{
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .urunler{
+        width: 150px;
+        height: auto;
+        margin-left: 15px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+    }
+
+    .img{
+        display: block;
+        width: 100%;
+        height: 110px;
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .urun{
+        display: block;
+        width: 100%;
+        height: 10px;
+        margin: 10px 0;
+        font-size: 12px;
+        color: #180A0A;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+    }
+    .btn{
+        display: block;
+        width: 70px;
+        height: auto;
+        margin: 10px auto;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    
+    /*------------------ Hesap Bölümü -------------------*/
+
+#responsive{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.responsivehesapAlani{
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+    max-height: 500px;
+    background-color: white;
+    overflow: scroll;
+    padding: 10px 5px 10px 15px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+    border-radius: 20px 20px 0px 0px;
+    transition: .5s;
+}
+.hesapAlani{
+    position: fixed;
+    bottom:-100%;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    overflow: scroll;
+    padding: 10px 5px 10px 15px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.urunList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #180A0A;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+}
+.urunAdi{
+    width: 40%;
+    text-align: start;
+    justify-content: start;
+}
+.urunPorsiyon{
+    width: 35%;
+    text-align: center;
+    justify-content: center;
+}
+.urunFiyati{
+    width: 14%;
+    text-align: end;
+    justify-content: end;
+}
+.hesapbuton{
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color:#FA9628;
+    font-family: 'Oswald', sans-serif;
+}
+
+#toplamDetay{
+    display: none;
+}
+
+.odeme{
+    padding: 5px;
+    font-size: 15px;
+    margin: 20px auto;
+}
+
+/* ----------- ÖDEME ALANİ ---------------- */
+
+.radioinput{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.radio{
+    height: 15px;
+    line-height: 18px;
+    font-size: 18px;
+}
+.text{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#kartodemealani{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.kartbaslik{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.kartodemeinputalani{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.kartodemeay, .kartodemeyil,.kartodemecvv{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+#kartodemealani .btn{
+    width: 50%;
+    height: 40px;
+    margin: 0 auto;
+}
+
+
+.basarili{
+    width: 100%;
+    height: 470px;
+}
+.resimalani{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+}
+.resimalani img{
+    width: 100%;
+    height: 100%;
+}
+
+.basarilitext{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+    /*----------- FOOTER ALANI ----------*/
+
+    #footer-alani{
+        width: 100%;
+        height: auto;
+    }
+
+    /*-------- İÇERİK ALANI----------*/
+
+    .icerik-baslik{
+        width: 100%;
+    }
+    .icerik-baslik .image-area{
+        width: 100px;
+        height: 150px;
+    }
+    .icerik-baslik #icerik{
+        font-size: 13px;
+    }
+    #baslik h1{
+        font-size: 30px;
+    }
+
+   /* YAZARIN DİĞER KİTAPLARI ALANI  */
+
+   .yazarin-diger-kitaplari-text,.cizgi-alani{
+        width: 100%;       
+    }
+    .cizgi-ustu-text{   
+        font-size: 16px;
+    }
+    .cizgi1,.cizgi2{
+        width: 47%;
+    }
+    .yazarin-diger-kitaplari-container{
+        width: 100%;
+        height: 140px;
+    }
+    .yazarin-diger-kitaplari{
+        width: 63%;
+    }
+
+    /* YORUM ALANI İÇİN KODLAR */
+    .FormAlani, .TextareaAlani, .InputAlani, .YorumlarBolumu{
+        width: 100%;
+    }
+    .YorumBaslik{
+        font-size: 16px;
+    }
+    .TextareaAlani textarea, .InputAlani input, .yorum-kullanici{
+        font-size: 14px;
+    }
+
+    /* -------- modal --------*/
+
+    #modal-container{
+        width: 90%;
+        height: 200px;
+    }
+    .modal-baslik{
+        width: 100%;
+        height: 75px;
+        line-height: 75px;
+    }
+    
+    .modal-icerik{
+        width: 100%;
+        height: 125px;
+        line-height: 125px;
+        padding-left: 20px;
+        color: #3c485e;
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+    }
+    
+}

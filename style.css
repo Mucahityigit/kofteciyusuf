@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+ a:hover{
+    text-decoration: none;
+}
+body{
+    background-color: #eceff1;
+}
+/* ----------------- HEADER AREA ---------------------*/
+
+#header-container{
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #101010;
+   box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+   z-index: 3;
+}
+#header{
+    display: block;
+    width: 1270px;
+    height: 100%;
+    margin: 0 auto;
+}
+#logo-container{
+    position: relative;
+    display: inline-block;
+    padding: 15px 0px;
+    float: left;
+    height: 100%;    
+}
+#logo{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#search-container{
+    position: relative;
+    display: inline-block;
+    width: 480px;
+    height: 100%;
+    padding: 10px 0px;
+    margin-left: 50px;
+}
+#search-btn{
+    border: none;
+    outline: none;
+}
+#search-input{
+    width: 100%;
+    height:50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    background: none;
+    padding-left: 10px;
+    padding-right: 50px;
+    color: #F0FFFF;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    border-bottom: 1px solid #F0FFFF;
+}
+#search-icon{
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    font-size: 23px;
+    color:#F0FFFF;
+    cursor: pointer;
+}
+#menu-container{
+    display: inline-block;
+    width: 465px;
+    height: 100%;
+    float: right;
+}
+
+#menu-list{
+    width: 535px;
+    height: 100%;
+    line-height: 70px;
+}
+
+.menu-item{
+    float: left;
+    margin-left: 62px;
+    list-style: none;
+}
+.menu-item-a{
+    text-decoration: none;
+    color: #F0FFFF;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.7px;
+}
+.menu-item-a:hover,.menu-item-a:focus{
+    color:#cba0aa;
+}
+
+#ustAciklama{
+    display: block;
+    width: 1270px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+    text-align: center;
+    font-size: 18px;
+    color: #180A0A;
+    font-family: 'Oswald', sans-serif;
+    line-height: 50px;
+}
+
+#container,#container3{
+    display: flex;
+    width: 1270px;
+    height: auto;
+    margin: 0 auto;
+}
+#container2{
+    display: flex;
+    width: 1270px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+/*------------------ Ana Bölüm -------------------*/
+
+#urunlerAlani{
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.urunler{
+    width: 240px;
+    height: auto;
+    margin: 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+}
+
+.img{
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.urun{
+    display: block;
+    width: 100%;
+    height: 15px;
+    margin: 20px 0;
+    font-size: 20px;
+    color: #180A0A;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.urunid{
+    display: none;
+}
+.btn{
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 30px auto;
+    padding: 5px 20px;
+    border: 2px solid #FA9628;
+    outline: none;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #180A0A;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    transition: .2s;
+}
+.btn:hover{
+    background-color: #FA9628;
+}
+
+
+/*------------------ Hesap Bölümü -------------------*/
+
+#responsive{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    background: #F0FFFF;
+    width: 100%;
+    height: auto;
+}
+#responsivetoplamDetay{
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 10px 30px;
+    color: #FA9628;
+    font-size: 20px;
+    border-top: 2px solid #FA9628;
+    font-family: 'Oswald', sans-serif;
+}
+.responsivetoplam{
+    float: right;
+}
+
+.hesapAlani{
+    position: fixed;
+    margin-top: 100px;
+    right: 230px;
+    width: 500px;
+    height: auto;
+    max-height: 500px;
+    overflow: scroll;
+    padding: 20px 10px 20px 30px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+    border-radius: 20px;
+    background-color: white;
+}
+#masaid{
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #FA9628;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid #FA9628;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.urunList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: #180A0A;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.urunAdi{
+    width: 180px;
+    text-align: start;
+    justify-content: start;
+}
+.urunPorsiyon{
+    width: 100px;
+    text-align: center;
+    justify-content: center;
+}
+.urunFiyati{
+    width: 100px;
+    text-align: end;
+    justify-content: end;
+}
+.hesapbuton{
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color:#FA9628;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+#toplamDetay{
+    display: block;
+    width: 380px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    color: #FA9628;
+    font-size: 20px;
+    border-top: 2px solid #FA9628;
+    font-family: 'Oswald', sans-serif;
+}
+.toplam{
+    float: right;
+}
+
+.odeme{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #FA9628;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    transition: .2s;
+    text-align: center;
+    color: #180A0A;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.odeme:hover{
+    background: #FA9628;
+}
+
+/* ----------- ÖDEME ALANİ ---------------- */
+
+.radioinput{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.radio{
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 10px;
+}
+.text{
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#kartodemealani{
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.kartbaslik{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #FA9628;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.sagalan,.solalan{
+    width: 300px;
+    height: auto;
+    justify-content: space-between;
+}
+
+.kartodemeinputalani{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+.kartodemeinputalani input{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    outline: none;
+    border :1px solid rgba(0,0,0,.4);
+    border-radius: 5px;
+}
+
+#masadetay{
+    width: 100%;
+    height: 150px;
+    margin-top:-20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+    border :1px solid rgba(0,0,0,.4);
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#masadetay:focus,.kartodemeinputalani input:focus,.kartodemeay:focus, .kartodemeyil:focus, .kartodemecvv:focus{
+    border: 2px solid #FA9628;
+}
+
+
+.kartodemeay, .kartodemeyil,.kartodemecvv{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+    border :1px solid rgba(0,0,0,.4);
+    border-radius: 5px;
+}
+
+
+
+/* ------------ FOOTER ALANI -------------- */
+
+#footer-container{
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+
+#footer-alani{
+    display: block;
+    width: 1270px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    color: #3c485e;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.basarili{
+    display: block;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.resimalani{
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.resimalani img{
+    width: 100%;
+    height: 100%;
+}
+
+.basarilitext{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+/* MODAL ALANI İŞLEMLERİ */
+@keyframes modal {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#modal-back{
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    z-index: 9998;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,.5);
+    animation: modal ease .5s;
+}
+
+#modal-container{
+    position: fixed;
+    width: 700px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    background: #f1fafd;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    animation: modal ease .5s;
+}
+.modal-baslik{
+    width: 100%;
+    height: 75px;
+    padding-left: 20px;
+    line-height: 75px;
+    background: #e3f7ff;
+    box-shadow: 0px 1px 5px rgba(0,0,0,.3);
+}
+.modal-baslik h4{
+    display: inline-block;
+    color: #3c485e;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+#modal-kapat{
+    display: inline-block;
+    float: right;
+    color: #3c485e;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 13px;
+    margin-top: -15px;
+}
+
+.modal-icerik{
+    width: 100%;
+    height: 125px;
+    line-height: 125px;
+    padding-left: 20px;
+    text-align: center;
+    color: #3c485e;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
